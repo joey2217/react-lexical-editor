@@ -68,18 +68,18 @@ export class AutocompleteNode extends DecoratorNode<JSX.Element | null> {
   }
 
   updateDOM(
-    prevNode: unknown,
-    dom: HTMLElement,
-    config: EditorConfig
+    _prevNode: unknown,
+    _dom: HTMLElement,
+    _config: EditorConfig
   ): boolean {
     return false
   }
 
-  createDOM(config: EditorConfig): HTMLElement {
+  createDOM(_config: EditorConfig): HTMLElement {
     return document.createElement('span')
   }
 
-  decorate(editor: LexicalEditor, config: EditorConfig): JSX.Element | null {
+  decorate(_editor: LexicalEditor, config: EditorConfig): JSX.Element | null {
     if (this.__uuid !== UUID) {
       return null
     }

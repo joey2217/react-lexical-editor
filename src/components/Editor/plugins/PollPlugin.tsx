@@ -15,7 +15,6 @@ import {
   COMMAND_PRIORITY_EDITOR,
   createCommand,
   LexicalCommand,
-  LexicalEditor,
 } from 'lexical';
 import {useEffect, useState} from 'react';
 import {

@@ -7,8 +7,6 @@
  */
 
 import './Modal.css';
-
-import * as React from 'react';
 import {ReactNode, useEffect, useRef} from 'react';
 import {createPortal} from 'react-dom';
 
