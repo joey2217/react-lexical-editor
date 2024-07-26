@@ -31,13 +31,13 @@ input[type='number'] {
 }
 
 .add-icon {
-  background-image: url(icons/add-sign.svg);
+  background-image: url(/icons/add-sign.svg);
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .minus-icon {
-  background-image: url(icons/minus-sign.svg);
+  background-image: url(/icons/minus-sign.svg);
   background-repeat: no-repeat;
   background-position: center;
 }
