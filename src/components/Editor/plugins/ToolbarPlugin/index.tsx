@@ -625,10 +625,7 @@ export default function ToolbarPlugin({
               >
                 <DropDownItem
                   onClick={() => {
-                    editor.dispatchCommand(
-                      INSERT_HORIZONTAL_RULE_COMMAND,
-                      undefined
-                    )
+                    editor.dispatchCommand(INSERT_HORIZONTAL_RULE_COMMAND, undefined)
                   }}
                   className="item"
                 >

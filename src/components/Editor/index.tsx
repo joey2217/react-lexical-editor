@@ -27,6 +27,16 @@ import InlineImagePlugin from './plugins/InlineImagePlugin'
 import { TablePlugin } from '@lexical/react/LexicalTablePlugin'
 import CollapsiblePlugin from './plugins/CollapsiblePlugin'
 import EmojisPlugin from './plugins/EmojisPlugin'
+import FloatingTextFormatToolbarPlugin from './plugins/FloatingTextFormatToolbarPlugin'
+import { HorizontalRulePlugin } from '@lexical/react/LexicalHorizontalRulePlugin'
+import PollPlugin from './plugins/PollPlugin'
+import { ListPlugin } from '@lexical/react/LexicalListPlugin'
+import { CheckListPlugin } from '@lexical/react/LexicalCheckListPlugin'
+import TabFocusPlugin from './plugins/TabFocusPlugin'
+import TableCellResizer from './plugins/TableCellResizer'
+import TableHoverActionsPlugin from './plugins/TableHoverActionsPlugin'
+import TableActionMenuPlugin from './plugins/TableActionMenuPlugin'
+import TableOfContentsPlugin from './plugins/TableOfContentsPlugin'
 
 // Catch any errors that occur during Lexical updates and log them
 // or throw them as needed. If you don't throw them, Lexical will
@@ -105,56 +115,58 @@ export default function Editor() {
     <LexicalComposer initialConfig={initialConfig}>
       <section className="editor-shell">
         <div className="editor-container">
-          <div className="editor-inner">
-            <ToolbarPlugin setIsLinkEditMode={setIsLinkEditMode} />
-            <RichTextPlugin
-              contentEditable={
-                <div className="editor-scrollbar">
-                  <div className="editor" ref={onRef}>
-                    <ContentEditable className="editor-input" />
-                  </div>
+          <ToolbarPlugin setIsLinkEditMode={setIsLinkEditMode} />
+          <RichTextPlugin
+            contentEditable={
+              <div className="editor-scrollbar">
+                <div className="editor" ref={onRef}>
+                  <ContentEditable className="editor-input" />
                 </div>
-              }
-              ErrorBoundary={LexicalErrorBoundary}
-              placeholder={
-                <div className="editor-placeholder">placeholder</div>
-              }
-            />
-            <HistoryPlugin />
-            <AutoFocusPlugin />
-            <CodeHighlightPlugin />
-            <LinkPlugin />
-            <PageBreakPlugin />
-            <ImagesPlugin />
-            <InlineImagePlugin />
-            <EmojisPlugin />
-            <TablePlugin
-              hasCellMerge={true}
-              hasCellBackgroundColor={true}
-            />
-            <CollapsiblePlugin />
-            <MyOnChangePlugin onChange={(e) => console.log(e)} />
-            {floatingAnchorElem && !isSmallWidthViewport && (
-              <>
-                {/* <DraggableBlockPlugin anchorElem={floatingAnchorElem} /> */}
-                <CodeActionMenuPlugin anchorElem={floatingAnchorElem} />
-                <FloatingLinkEditorPlugin
-                  anchorElem={floatingAnchorElem}
-                  isLinkEditMode={isLinkEditMode}
-                  setIsLinkEditMode={setIsLinkEditMode}
-                />
-                {/* 
-                <TableCellActionMenuPlugin
-                  anchorElem={floatingAnchorElem}
-                  cellMerge={true}
-                />
-                <FloatingTextFormatToolbarPlugin
-                  anchorElem={floatingAnchorElem}
-                  setIsLinkEditMode={setIsLinkEditMode}
-                /> */}
-              </>
-            )}
-          </div>
+              </div>
+            }
+            ErrorBoundary={LexicalErrorBoundary}
+            placeholder={<div className="editor-placeholder">placeholder</div>}
+          />
+          <HistoryPlugin />
+          <AutoFocusPlugin />
+          <CodeHighlightPlugin />
+          <LinkPlugin />
+          <PageBreakPlugin />
+          <ImagesPlugin />
+          <InlineImagePlugin />
+          <HorizontalRulePlugin />
+          <EmojisPlugin />
+          <ListPlugin />
+          <CheckListPlugin />
+          <TabFocusPlugin />
+          <PollPlugin />
+          {/* <ContextMenuPlugin /> */}
+          <TablePlugin hasCellMerge={true} hasCellBackgroundColor={true} />
+          <TableCellResizer />
+          <TableHoverActionsPlugin />
+          {/* <ComponentPickerPlugin /> */}
+          <CollapsiblePlugin />
+          <MyOnChangePlugin onChange={(e) => console.log(e)} />
+          <TableOfContentsPlugin />
+          {floatingAnchorElem && !isSmallWidthViewport && (
+            <>
+              {/* <DraggableBlockPlugin anchorElem={floatingAnchorElem} /> */}
+              <CodeActionMenuPlugin anchorElem={floatingAnchorElem} />
+              <FloatingLinkEditorPlugin
+                anchorElem={floatingAnchorElem}
+                isLinkEditMode={isLinkEditMode}
+                setIsLinkEditMode={setIsLinkEditMode}
+              />
+              <TableActionMenuPlugin
+                anchorElem={floatingAnchorElem}
+                cellMerge={true}
+              />
+              <FloatingTextFormatToolbarPlugin
+                anchorElem={floatingAnchorElem}
+                setIsLinkEditMode={setIsLinkEditMode}
+              />
+            </>
+          )}
         </div>
       </section>
     </LexicalComposer>

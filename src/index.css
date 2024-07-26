@@ -66,4 +66,12 @@
   body {
     @apply text-foreground;
   }
+
+  ol {
+    @apply list-decimal;
+  }
+
+  ul {
+    @apply list-disc;
+  }
 }

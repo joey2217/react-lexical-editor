@@ -3,6 +3,15 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "description": "A react lexical editor",
+  "keywords": [
+    "Lexical",
+    "richtext",
+    "editor",
+    "richtext editor",
+    "react"
+  ],
+  "author": "joey",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",

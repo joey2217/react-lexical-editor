@@ -436,7 +436,11 @@ export default function ImageComponent({
                   />
                 }
                 ErrorBoundary={LexicalErrorBoundary}
-                placeholder={<div>placeholder</div>}
+                placeholder={
+                  <div className="ImageNode__placeholder">
+                    Enter a caption...
+                  </div>
+                }
               />
               {/* {showNestedEditorTreeView === true ? <TreeViewPlugin /> : null} */}
             </LexicalNestedComposer>

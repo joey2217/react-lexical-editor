@@ -190,7 +190,7 @@
   cursor: pointer;
 }
 .editor_theme__tableAddColumns:after {
-  background-image: url(../images/icons/plus.svg);
+  background-image: url(icons/plus.svg);
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -216,7 +216,7 @@
   cursor: pointer;
 }
 .editor_theme__tableAddRows:after {
-  background-image: url(../images/icons/plus.svg);
+  background-image: url(icons/plus.svg);
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
