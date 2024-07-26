@@ -10,7 +10,7 @@ import type { EditorThemeClasses } from 'lexical'
 
 import './theme.css'
 
-const PREFIX = 'editor_theme'
+export const PREFIX = 'editor_theme'
 
 const theme: EditorThemeClasses = {
   autocomplete: `${PREFIX}__autocomplete`,

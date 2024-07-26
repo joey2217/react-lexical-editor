@@ -2,7 +2,10 @@ import { useEffect, useState } from 'react'
 import { $createTextNode, $getRoot, type EditorState } from 'lexical'
 
 import { AutoFocusPlugin } from '@lexical/react/LexicalAutoFocusPlugin'
-import { type InitialConfigType, LexicalComposer } from '@lexical/react/LexicalComposer'
+import {
+  type InitialConfigType,
+  LexicalComposer,
+} from '@lexical/react/LexicalComposer'
 import { RichTextPlugin } from '@lexical/react/LexicalRichTextPlugin'
 import { ContentEditable } from '@lexical/react/LexicalContentEditable'
 import { HistoryPlugin } from '@lexical/react/LexicalHistoryPlugin'
@@ -18,6 +21,12 @@ import CodeHighlightPlugin from './plugins/CodeHighlightPlugin'
 import LinkPlugin from './plugins/LinkPlugin'
 import FloatingLinkEditorPlugin from './plugins/FloatingLinkEditorPlugin'
 import { $createHeadingNode } from '@lexical/rich-text'
+import PageBreakPlugin from './plugins/PageBreakPlugin'
+import ImagesPlugin from './plugins/ImagesPlugin'
+import InlineImagePlugin from './plugins/InlineImagePlugin'
+import { TablePlugin } from '@lexical/react/LexicalTablePlugin'
+import CollapsiblePlugin from './plugins/CollapsiblePlugin'
+import EmojisPlugin from './plugins/EmojisPlugin'
 
 // Catch any errors that occur during Lexical updates and log them
 // or throw them as needed. If you don't throw them, Lexical will
@@ -115,6 +124,15 @@ export default function Editor() {
             <AutoFocusPlugin />
             <CodeHighlightPlugin />
             <LinkPlugin />
+            <PageBreakPlugin />
+            <ImagesPlugin />
+            <InlineImagePlugin />
+            <EmojisPlugin />
+            <TablePlugin
+              hasCellMerge={true}
+              hasCellBackgroundColor={true}
+            />
+            <CollapsiblePlugin />
             <MyOnChangePlugin onChange={(e) => console.log(e)} />
             {floatingAnchorElem && !isSmallWidthViewport && (
               <>
