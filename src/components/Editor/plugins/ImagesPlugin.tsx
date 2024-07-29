@@ -38,6 +38,8 @@ import Button from '../ui/Button'
 import { DialogActions, DialogButtonsList } from '../ui/Dialog'
 import FileInput from '../ui/FileInput'
 import TextInput from '../ui/TextInput'
+import landscape from '../assets/images/landscape.jpg'
+import yellowFlower from '../assets/images/yellow-flower.jpg'
 
 export type InsertImagePayload = Readonly<ImagePayload>
 
@@ -175,11 +177,11 @@ export function InsertImageDialog({
                   ? {
                       altText:
                         'Daylight fir trees forest glacier green high ice landscape',
-                      src: '/images/landscape.jpg',
+                      src: landscape,
                     }
                   : {
                       altText: 'Yellow flower in tilt shift lens',
-                      src: '/images/yellow-flower.jpg',
+                      src: yellowFlower,
                     }
               )
             }

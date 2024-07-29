@@ -44,6 +44,7 @@ import InsertLayoutDialog from './LayoutPlugin/InsertLayoutDialog'
 import { INSERT_PAGE_BREAK } from './PageBreakPlugin'
 import { InsertPollDialog } from './PollPlugin'
 import { InsertTableDialog } from './TablePlugin'
+import catTypingGif from '../assets/images/cat-typing.gif'
 
 class ComponentPickerOption extends MenuOption {
   // What shows up in the editor
@@ -275,7 +276,7 @@ function getBaseOptions(editor: LexicalEditor, showModal: ShowModal) {
       onSelect: () =>
         editor.dispatchCommand(INSERT_IMAGE_COMMAND, {
           altText: 'Cat typing on a laptop',
-          src: '/images/cat-typing.gif',
+          src: catTypingGif,
         }),
     }),
     new ComponentPickerOption('Image', {

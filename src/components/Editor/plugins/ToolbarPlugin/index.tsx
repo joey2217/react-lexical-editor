@@ -75,6 +75,7 @@ import { InsertPollDialog } from '../PollPlugin'
 import InsertLayoutDialog from '../LayoutPlugin/InsertLayoutDialog'
 import { $createStickyNode } from '../../nodes/StickyNode'
 import { INSERT_COLLAPSIBLE_COMMAND } from '../CollapsiblePlugin'
+import catTypingGif from '../../assets/images/cat-typing.gif'
 
 const LowPriority = 1
 
@@ -667,7 +668,7 @@ export default function ToolbarPlugin({
                   onClick={() =>
                     insertGifOnClick({
                       altText: 'Cat typing on a laptop',
-                      src: '/images/cat-typing.gif',
+                      src: catTypingGif,
                     })
                   }
                   className="item"

@@ -9,7 +9,6 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background: #eee;
-  padding: 0 20px;
 }
 
 input:focus-within {
@@ -24,6 +23,7 @@ input:focus-within {
   position: relative;
   line-height: 1.7;
   font-weight: 400;
+  padding: 0 20px;
 }
 
 .editor-shell .editor-container {
@@ -218,132 +218,132 @@ button.toolbar-item.active i {
 * icon
 */
 .icon.paragraph {
-  background-image: url(/icons/text-paragraph.svg);
+  background-image: url(./assets/icons/text-paragraph.svg);
 }
 
 .icon.h1 {
-  background-image: url(/icons/type-h1.svg);
+  background-image: url(./assets/icons/type-h1.svg);
 }
 
 .icon.h2 {
-  background-image: url(/icons/type-h2.svg);
+  background-image: url(./assets/icons/type-h2.svg);
 }
 
 .icon.h3 {
-  background-image: url(/icons/type-h3.svg);
+  background-image: url(./assets/icons/type-h3.svg);
 }
 
 .icon.h4 {
-  background-image: url(/icons/type-h4.svg);
+  background-image: url(./assets/icons/type-h4.svg);
 }
 
 .icon.h5 {
-  background-image: url(/icons/type-h5.svg);
+  background-image: url(./assets/icons/type-h5.svg);
 }
 
 .icon.h6 {
-  background-image: url(/icons/type-h6.svg);
+  background-image: url(./assets/icons/type-h6.svg);
 }
 
 .icon.bullet-list,
 .icon.bullet {
-  background-image: url(/icons/list-ul.svg);
+  background-image: url(./assets/icons/list-ul.svg);
 }
 
 .icon.check-list,
 .icon.check {
-  background-image: url(/icons/square-check.svg);
+  background-image: url(./assets/icons/square-check.svg);
 }
 
 .icon.numbered-list,
 .icon.number {
-  background-image: url(/icons/list-ol.svg);
+  background-image: url(./assets/icons/list-ol.svg);
 }
 
 .icon.quote {
-  background-image: url(/icons/chat-square-quote.svg);
+  background-image: url(./assets/icons/chat-square-quote.svg);
 }
 
 .icon.code {
-  background-image: url(/icons/code.svg);
+  background-image: url(./assets/icons/code.svg);
 }
 
 i.palette {
-  background-image: url(/icons/palette.svg);
+  background-image: url(./assets/icons/palette.svg);
 }
 
 i.bucket {
-  background-image: url(/icons/paint-bucket.svg);
+  background-image: url(./assets/icons/paint-bucket.svg);
 }
 
 i.bold {
-  background-image: url(/icons/type-bold.svg);
+  background-image: url(./assets/icons/type-bold.svg);
 }
 
 i.italic {
-  background-image: url(/icons/type-italic.svg);
+  background-image: url(./assets/icons/type-italic.svg);
 }
 
 i.clear {
-  background-image: url(/icons/trash.svg);
+  background-image: url(./assets/icons/trash.svg);
 }
 
 i.code {
-  background-image: url(/icons/code.svg);
+  background-image: url(./assets/icons/code.svg);
 }
 
 i.underline {
-  background-image: url(/icons/type-underline.svg);
+  background-image: url(./assets/icons/type-underline.svg);
 }
 
 i.strikethrough {
-  background-image: url(/icons/type-strikethrough.svg);
+  background-image: url(./assets/icons/type-strikethrough.svg);
 }
 
 i.subscript {
-  background-image: url(/icons/type-subscript.svg);
+  background-image: url(./assets/icons/type-subscript.svg);
 }
 
 i.superscript {
-  background-image: url(/icons/type-superscript.svg);
+  background-image: url(./assets/icons/type-superscript.svg);
 }
 
 i.link {
-  background-image: url(/icons/link.svg);
+  background-image: url(./assets/icons/link.svg);
 }
 
 i.horizontal-rule {
-  background-image: url(/icons/horizontal-rule.svg);
+  background-image: url(./assets/icons/horizontal-rule.svg);
 }
 
 .icon.plus {
-  background-image: url(/icons/plus.svg);
+  background-image: url(./assets/icons/plus.svg);
 }
 
 .icon.caret-right {
-  background-image: url(/icons/caret-right-fill.svg);
+  background-image: url(./assets/icons/caret-right-fill.svg);
 }
 
 .icon.dropdown-more {
-  background-image: url(/icons/dropdown-more.svg);
+  background-image: url(./assets/icons/dropdown-more.svg);
 }
 
 .icon.font-color {
-  background-image: url(/icons/font-color.svg);
+  background-image: url(./assets/icons/font-color.svg);
 }
 
 .icon.font-family {
-  background-image: url(/icons/font-family.svg);
+  background-image: url(./assets/icons/font-family.svg);
 }
 
 .icon.bg-color {
-  background-image: url(/icons/bg-color.svg);
+  background-image: url(./assets/icons/bg-color.svg);
 }
 
 .icon.table {
   background-color: #6c757d;
-  mask-image: url(/icons/table.svg);
-  -webkit-mask-image: url(/icons/table.svg);
+  mask-image: url(./assets/icons/table.svg);
+  -webkit-mask-image: url(./assets/icons/table.svg);
   mask-repeat: no-repeat;
   -webkit-mask-repeat: no-repeat;
   mask-size: contain;
@@ -351,132 +351,132 @@ i.horizontal-rule {
 }
 
 i.image {
-  background-image: url(/icons/file-image.svg);
+  background-image: url(./assets/icons/file-image.svg);
 }
 
 i.table {
-  background-image: url(/icons/table.svg);
+  background-image: url(./assets/icons/table.svg);
 }
 
 i.close {
-  background-image: url(/icons/close.svg);
+  background-image: url(./assets/icons/close.svg);
 }
 
 i.figma {
-  background-image: url(/icons/figma.svg);
+  background-image: url(./assets/icons/figma.svg);
 }
 
 i.poll {
-  background-image: url(/icons/card-checklist.svg);
+  background-image: url(./assets/icons/card-checklist.svg);
 }
 
 i.columns {
-  background-image: url(/icons/3-columns.svg);
+  background-image: url(./assets/icons/3-columns.svg);
 }
 
 i.tweet {
-  background-image: url(/icons/tweet.svg);
+  background-image: url(./assets/icons/tweet.svg);
 }
 
 i.youtube {
-  background-image: url(/icons/youtube.svg);
+  background-image: url(./assets/icons/youtube.svg);
 }
 
 .icon.left-align,
 i.left-align {
-  background-image: url(/icons/text-left.svg);
+  background-image: url(./assets/icons/text-left.svg);
 }
 
 .icon.center-align,
 i.center-align {
-  background-image: url(/icons/text-center.svg);
+  background-image: url(./assets/icons/text-center.svg);
 }
 
 .icon.right-align,
 i.right-align {
-  background-image: url(/icons/text-right.svg);
+  background-image: url(./assets/icons/text-right.svg);
 }
 
 .icon.justify-align,
 i.justify-align {
-  background-image: url(/icons/justify.svg);
+  background-image: url(./assets/icons/justify.svg);
 }
 
 i.indent {
-  background-image: url(/icons/indent.svg);
+  background-image: url(./assets/icons/indent.svg);
 }
 
 i.markdown {
-  background-image: url(/icons/markdown.svg);
+  background-image: url(./assets/icons/markdown.svg);
 }
 
 i.outdent {
-  background-image: url(/icons/outdent.svg);
+  background-image: url(./assets/icons/outdent.svg);
 }
 
 i.undo {
-  background-image: url(/icons/arrow-counterclockwise.svg);
+  background-image: url(./assets/icons/arrow-counterclockwise.svg);
 }
 
 i.redo {
-  background-image: url(/icons/arrow-clockwise.svg);
+  background-image: url(./assets/icons/arrow-clockwise.svg);
 }
 
 i.sticky {
-  background-image: url(/icons/sticky.svg);
+  background-image: url(./assets/icons/sticky.svg);
 }
 
 i.mic {
-  background-image: url(/icons/mic.svg);
+  background-image: url(./assets/icons/mic.svg);
 }
 
 i.import {
-  background-image: url(/icons/upload.svg);
+  background-image: url(./assets/icons/upload.svg);
 }
 
 i.export {
-  background-image: url(/icons/download.svg);
+  background-image: url(./assets/icons/download.svg);
 }
 
 i.share {
-  background-image: url(/icons/send.svg);
+  background-image: url(./assets/icons/send.svg);
 }
 
 i.diagram-2 {
-  background-image: url(/icons/diagram-2.svg);
+  background-image: url(./assets/icons/diagram-2.svg);
 }
 
 i.user {
-  background-image: url(/icons/user.svg);
+  background-image: url(./assets/icons/user.svg);
 }
 
 i.equation {
-  background-image: url(/icons/plus-slash-minus.svg);
+  background-image: url(./assets/icons/plus-slash-minus.svg);
 }
 
 i.gif {
-  background-image: url(/icons/filetype-gif.svg);
+  background-image: url(./assets/icons/filetype-gif.svg);
 }
 
 i.copy {
-  background-image: url(/icons/copy.svg);
+  background-image: url(./assets/icons/copy.svg);
 }
 
 i.success {
-  background-image: url(/icons/success.svg);
+  background-image: url(./assets/icons/success.svg);
 }
 
 i.prettier {
-  background-image: url(/icons/prettier.svg);
+  background-image: url(./assets/icons/prettier.svg);
 }
 
 i.prettier-error {
-  background-image: url(/icons/prettier-error.svg);
+  background-image: url(./assets/icons/prettier-error.svg);
 }
 
 i.page-break,
 .icon.page-break {
-  background-image: url(/icons/scissors.svg);
+  background-image: url(./assets/icons/scissors.svg);
 }
 
 i.chevron-down {
@@ -485,7 +485,7 @@ i.chevron-down {
   display: inline-block;
   height: 8px;
   width: 8px;
-  background-image: url(/icons/chevron-down.svg);
+  background-image: url(./assets/icons/chevron-down.svg);
 }
 
 /* 
@@ -637,7 +637,7 @@ link-editor
 }
 
 .link-editor div.link-edit {
-  background-image: url(/icons/pencil-fill.svg);
+  background-image: url(./assets/icons/pencil-fill.svg);
   background-size: 16px;
   background-position: center;
   background-repeat: no-repeat;
@@ -651,7 +651,7 @@ link-editor
 }
 
 .link-editor div.link-trash {
-  background-image: url(/icons/trash.svg);
+  background-image: url(./assets/icons/trash.svg);
   background-size: 16px;
   background-position: center;
   background-repeat: no-repeat;
@@ -665,7 +665,7 @@ link-editor
 }
 
 .link-editor div.link-cancel {
-  background-image: url(/icons/close.svg);
+  background-image: url(./assets/icons/close.svg);
   background-size: 16px;
   background-position: center;
   background-repeat: no-repeat;
@@ -680,7 +680,7 @@ link-editor
 }
 
 .link-editor div.link-confirm {
-  background-image: url(/icons/success-alt.svg);
+  background-image: url(./assets/icons/success-alt.svg);
   background-size: 16px;
   background-position: center;
   background-repeat: no-repeat;
@@ -794,7 +794,7 @@ editor-image
 .editor-shell .editor-image .image-edit-button {
   border: 1px solid rgba(0, 0, 0, 0.3);
   border-radius: 5px;
-  background-image: url(/icons/pencil-fill.svg);
+  background-image: url(./assets/icons/pencil-fill.svg);
   background-size: 16px;
   background-position: center;
   background-repeat: no-repeat;
@@ -1067,7 +1067,7 @@ i.chevron-down {
   display: inline-block;
   height: 8px;
   width: 8px;
-  background-image: url(/icons/chevron-down.svg);
+  background-image: url(./assets/icons/chevron-down.svg);
 }
 
 .action-button {

@@ -58,6 +58,7 @@ import { EmojiNode } from './EmojiNode'
 import { $isImageNode } from './ImageNode'
 import { KeywordNode } from './KeywordNode'
 import { ContentEditable } from '@lexical/react/LexicalContentEditable'
+import imageBroken from '../assets/images/image-broken.svg'
 
 const imageCache = new Set()
 
@@ -120,7 +121,7 @@ function LazyImage({
 function BrokenImage(): JSX.Element {
   return (
     <img
-      src="/images/image-broken.svg"
+      src={imageBroken}
       style={{
         height: 200,
         opacity: 0.2,
