@@ -37,6 +37,7 @@ import TableCellResizer from './plugins/TableCellResizer'
 import TableHoverActionsPlugin from './plugins/TableHoverActionsPlugin'
 import TableActionMenuPlugin from './plugins/TableActionMenuPlugin'
 import TableOfContentsPlugin from './plugins/TableOfContentsPlugin'
+import ActionsPlugin from './plugins/ActionsPlugin'
 
 // Catch any errors that occur during Lexical updates and log them
 // or throw them as needed. If you don't throw them, Lexical will
@@ -127,6 +128,7 @@ export default function Editor() {
             ErrorBoundary={LexicalErrorBoundary}
             placeholder={<div className="editor-placeholder">placeholder</div>}
           />
+          <ActionsPlugin />
           <HistoryPlugin />
           <AutoFocusPlugin />
           <CodeHighlightPlugin />

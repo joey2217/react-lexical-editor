@@ -1096,3 +1096,75 @@ button.action-button:disabled {
   background: #eee;
   cursor: not-allowed;
 }
+
+/*
+actions
+*/
+.actions {
+  position: absolute;
+  text-align: right;
+  margin: 10px;
+  bottom: 0;
+  right: 0;
+}
+
+.actions.tree-view {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.actions i {
+  background-size: contain;
+  display: inline-block;
+  height: 15px;
+  width: 15px;
+  vertical-align: -0.25em;
+}
+
+/* .actions i.indent {
+  background-image: url(./assets/icons/indent.svg);
+}
+
+.actions i.outdent {
+  background-image: url(./assets/icons/outdent.svg);
+} */
+
+.actions i.lock {
+  background-image: url(./assets/icons/lock-fill.svg);
+}
+
+/* .actions i.image {
+  background-image: url(./assets/icons/file-image.svg);
+}
+
+.actions i.table {
+  background-image: url(./assets/icons/table.svg);
+} */
+
+.actions i.unlock {
+  background-image: url(./assets/icons/lock.svg);
+}
+
+/* .actions i.left-align {
+  background-image: url(./assets/icons/text-left.svg);
+}
+
+.actions i.center-align {
+  background-image: url(./assets/icons/text-center.svg);
+}
+
+.actions i.right-align {
+  background-image: url(./assets/icons/text-right.svg);
+}
+
+.actions i.justify-align {
+  background-image: url(./assets/icons/justify.svg);
+}
+
+.actions i.disconnect {
+  background-image: url(./assets/icons/plug.svg);
+}
+
+.actions i.connect {
+  background-image: url(./assets/icons/plug-fill.svg);
+} */

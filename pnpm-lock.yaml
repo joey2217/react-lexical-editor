@@ -11,6 +11,9 @@ importers:
       '@lexical/code':
         specifier: ^0.16.1
         version: 0.16.1
+      '@lexical/file':
+        specifier: ^0.16.1
+        version: 0.16.1
       '@lexical/hashtag':
         specifier: ^0.16.1
         version: 0.16.1
@@ -348,6 +351,9 @@ packages:
 
   '@lexical/dragon@0.16.1':
     resolution: {integrity: sha512-Rvd60GIYN5kpjjBumS34EnNbBaNsoseI0AlzOdtIV302jiHPCLH0noe9kxzu9nZy+MZmjZy8Dx2zTbQT2mueRw==}
+
+  '@lexical/file@0.16.1':
+    resolution: {integrity: sha512-H1JGTbKBtAaXTS1Y/VVfyuBNKMBeKRsaJE9pb4hiW2xs3QlSys4FgKiowxKjvZgJcycrM3T4hGePVO7W5FXc4g==}
 
   '@lexical/hashtag@0.16.1':
     resolution: {integrity: sha512-G+YOxStAKs3q1utqm9KR4D4lCkwIH52Rctm4RgaVTI+4lvTaybeDRGFV75P/pI/qlF7/FvAYHTYEzCjtC3GNMQ==}
@@ -2028,6 +2034,10 @@ snapshots:
       react-dom: 18.3.1(react@18.3.1)
 
   '@lexical/dragon@0.16.1':
+    dependencies:
+      lexical: 0.16.1
+
+  '@lexical/file@0.16.1':
     dependencies:
       lexical: 0.16.1
 
